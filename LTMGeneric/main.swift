@@ -9,6 +9,9 @@ import Foundation
 enum Couleur {
     case noir
     case blanc
+    case rouge
+    case vert
+    case bleu
 }
 
 /// class Point adhérant à Equatable
