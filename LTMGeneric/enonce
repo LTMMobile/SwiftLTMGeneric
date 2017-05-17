@@ -1,0 +1,60 @@
+// Travail pratique : Génériques et types contraints
+
+/// enum Couleur
+enum Couleur {
+    case noir
+    case blanc
+}
+
+/// class Point : Implémenter la classe adhérant à Equatable
+class Point : Equatable {
+
+    //...
+
+    var x:Double
+    var y:Double 
+
+    // constructeur à prévoir
+}
+
+/// Le Segment contient 2 points et une couleur
+class Segment {
+
+    //...
+}
+
+/// Créer une fonction swapObjet échangeant (swap) 2 objets, adhérants au
+/// protocole Equatable
+func swapObjet<.......>( ............................ ) {
+
+    // Appel de l'opérateur ==
+    // Test des objets : les 2 objets en entrée sont-ils les mêmes ?
+
+    // swapping
+    let temp = objet1
+    objet1 = objet2
+    objet2 = temp
+}
+
+var p3:Point = Point()
+var p4:Point = Point()
+
+// échange les points
+swapObjet( .............. )
+
+var seg1 = Segment()
+var seg2 = Segment()
+
+// échange les segments
+swapObjet( .............. )
+
+
+struct NoData : Error {}
+
+/// Créez la classe générique Stack<T> (pile LIFO)
+class .......... {
+
+    // ...
+    // Créez les méthodes : push, pop, count (génériques)
+
+}
